@@ -1,4 +1,4 @@
-package org.lessons.java;
+package org.lessons.java.abstractAnimals;
 
 public abstract class Animale {
     public void dormi() {

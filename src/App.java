@@ -1,7 +1,9 @@
-import org.lessons.java.Aquila;
-import org.lessons.java.Cane;
-import org.lessons.java.Delfino;
-import org.lessons.java.Passerotto;
+import org.lessons.java.abstractAnimals.Aquila;
+import org.lessons.java.abstractAnimals.Cane;
+import org.lessons.java.abstractAnimals.Delfino;
+import org.lessons.java.abstractAnimals.INuotante;
+import org.lessons.java.abstractAnimals.IVolante;
+import org.lessons.java.abstractAnimals.Passerotto;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -24,5 +26,18 @@ public class App {
         delfino.verso();
         delfino.mangia();
         delfino.dormi();
+
+        faiNuotare(delfino);
+        faiVolare(passerotto);
+        faiVolare(aquila);
+
+    }
+
+    public static void faiVolare(IVolante animale) {
+        animale.vola();
+    }
+
+    public static void faiNuotare(INuotante animale) {
+        animale.nuota();
     }
 }

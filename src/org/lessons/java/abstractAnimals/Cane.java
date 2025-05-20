@@ -1,4 +1,4 @@
-package org.lessons.java;
+package org.lessons.java.abstractAnimals;
 
 public class Cane extends Animale {
     @Override
